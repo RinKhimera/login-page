@@ -1,4 +1,6 @@
 import Image from "next/image";
+import bgImage from "@/public/assets/bg.jpg";
+import logo from "@/public/assets/bolo.jpeg";
 import google from "../public/google.svg";
 import linkedin from "../public/linkedin.svg";
 import Input from "@/components/Input";
@@ -18,7 +20,7 @@ const LoginPage = () => {
           className="relative mx-auto max-w-lg w-full rounded-lg p-5 lg:max-w-md"
         >
           <div>
-            <Image src="/bolo.jpeg" width={75} height={75} alt={""} />
+            <Image src={logo} width={75} height={75} alt={""} />
           </div>
           <div className="grid gap-y-4">
             <div>
@@ -104,7 +106,10 @@ const LoginPage = () => {
           </div>
         </form>
       </div>
-      <div className="hidden lg:block bg-[url('/bg.jpg')] bg-cover lg:basis-1/2"></div>
+      <div
+        className="hidden lg:block bg-cover lg:basis-1/2"
+        style={{ backgroundImage: `url(${bgImage.src})` }}
+      ></div>
     </div>
   );
 };

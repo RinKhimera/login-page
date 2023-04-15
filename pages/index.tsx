@@ -1,9 +1,10 @@
 import Image from "next/image";
 import bgImage from "@/public/assets/bg.jpg";
 import logo from "@/public/assets/bolo.jpeg";
-import google from "../public/google.svg";
-import linkedin from "../public/linkedin.svg";
+import google from "@/public/google.svg";
+import linkedin from "@/public/linkedin.svg";
 import Input from "@/components/Input";
+import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
 import { useState } from "react";
 
 const LoginPage = () => {
@@ -19,12 +20,14 @@ const LoginPage = () => {
           method="POST"
           className="relative mx-auto max-w-lg w-full rounded-lg p-5 lg:max-w-md"
         >
-          <div>
+          <div className="flex justify-center">
             <Image src={logo} width={75} height={75} alt={""} />
           </div>
           <div className="grid gap-y-4">
             <div>
-              <h1 className="text-4xl font-bold">Create an account</h1>
+              <h1 className="text-4xl text-center font-bold">
+                Create an account
+              </h1>
             </div>
             <div>
               <Input
@@ -92,7 +95,7 @@ const LoginPage = () => {
                 </p>
               </button>
             </div>
-            <div className="grid gap-2 font-semibold">
+            <div className="grid gap-2 font-semibold text-center pt-6">
               <p>
                 Already have an account?{" "}
                 <span className="text-blue-600 hover:underline cursor-pointer">
@@ -107,9 +110,34 @@ const LoginPage = () => {
         </form>
       </div>
       <div
-        className="hidden lg:block bg-cover lg:basis-1/2"
-        style={{ backgroundImage: `url(${bgImage.src})` }}
-      ></div>
+        className="hidden bg-cover lg:block lg:basis-1/2"
+        style={{
+          backgroundImage: `url(${bgImage.src})`,
+        }}
+      >
+        <div className="h-full flex flex-col text-white justify-between items-center py-10">
+          <div className="bg-red-100 h-24 text-5xl"></div>
+          <div className=" px-16 leading-tight text-5xl font-semibold">
+            “We&apos;ve been using Bolo to kick start every new project and
+            can&apos;t imagine working without it.”
+          </div>
+          <div className="flex justify-between px-16 items-center w-full">
+            <div className="flex flex-col">
+              <div className="text-3xl font-semibold pb-5">Pokam Samuel</div>
+              <div className="text-xl font-semibold">Frontend Developer</div>
+              <div className="text-xl">Beyond Technologies</div>
+            </div>
+            <div className="flex gap-8 text-6xl h-1/2 items-center pt-10">
+              <button>
+                <CiCircleChevLeft />
+              </button>
+              <button>
+                <CiCircleChevRight />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

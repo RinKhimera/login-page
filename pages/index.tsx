@@ -18,7 +18,7 @@ const LoginPage = () => {
           className="relative mx-auto max-w-lg w-full rounded-lg p-5 lg:max-w-md"
         >
           <div>
-            <Image src="/bolo.jpeg" width={75} height={75} alt={""} />
+            <Image src="/assets/bolo.jpeg" width={75} height={75} alt={""} />
           </div>
           <div className="grid gap-y-4">
             <div>
@@ -54,8 +54,9 @@ const LoginPage = () => {
             <div className="pt-4">
               <button
                 type="submit"
-                className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-lg 
-              font-semibold text-white shadow-sm hover:bg-blue-700 transition"
+                className="block w-full rounded-md bg-blue-600 px-3.5
+                          py-2.5 text-center text-lg font-semibold text-white
+                          shadow-sm hover:bg-blue-700 transition"
               >
                 Create account
               </button>
@@ -66,9 +67,11 @@ const LoginPage = () => {
             <div>
               <button
                 type="submit"
-                className="flex items-center justify-center w-full rounded-md ring-1 ring-gray-300 text-black px-3.5 py-2 h-12 font-semibold shadow-sm hover:bg-slate-300 transition"
+                className="flex items-center justify-center w-full rounded-md
+                          ring-1 ring-gray-300 text-black px-3.5 py-2 h-12
+                          font-semibold shadow-sm hover:bg-slate-300 transition"
               >
-                <Image src={linkedin} alt={""} className="w-8 h-8 -mr-2" />
+                <Image src={linkedin} alt={""} className="w-7 h-7 -mr-2" />
                 <p className="text-center text-lg flex-grow">
                   Sign up with LinkedIn
                 </p>
@@ -77,7 +80,9 @@ const LoginPage = () => {
             <div>
               <button
                 type="submit"
-                className="flex items-center justify-center w-full rounded-md bg-slate-200 text-black px-3.5 py-2 h-12 font-semibold shadow-sm hover:bg-slate-300 transition"
+                className="flex items-center justify-center w-full rounded-md 
+                          ring-1 ring-gray-300 text-black px-3.5 py-2 h-12
+                          font-semibold shadow-sm hover:bg-slate-300 transition"
               >
                 <Image src={google} alt={""} className="w-7 h-7 -mr-2" />
                 <p className="text-center text-lg flex-grow">
@@ -99,7 +104,7 @@ const LoginPage = () => {
           </div>
         </form>
       </div>
-      <div className="hidden lg:block bg-[url('/bg-sm.jpg')] bg-cover lg:basis-1/2"></div>
+      <div className="hidden lg:block bg-[url('/assets/bg.jpg')] bg-cover lg:basis-1/2"></div>
     </div>
   );
 };

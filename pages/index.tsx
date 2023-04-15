@@ -18,7 +18,7 @@ const LoginPage = () => {
           className="relative mx-auto max-w-lg w-full rounded-lg p-5 lg:max-w-md"
         >
           <div>
-            <Image src="/assets/bolo.jpeg" width={75} height={75} alt={""} />
+            <Image src="/bolo.jpeg" width={75} height={75} alt={""} />
           </div>
           <div className="grid gap-y-4">
             <div>
@@ -104,7 +104,7 @@ const LoginPage = () => {
           </div>
         </form>
       </div>
-      <div className="hidden lg:block bg-[url('/assets/bg.jpg')] bg-cover lg:basis-1/2"></div>
+      <div className="hidden lg:block bg-[url('/bg.jpg')] bg-cover lg:basis-1/2"></div>
     </div>
   );
 };

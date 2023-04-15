@@ -4,18 +4,21 @@ import linkedin from "../public/linkedin.svg";
 
 const LoginPage = () => {
   return (
-    <div className="bg-[url('/bg.jpg')] 
-                    bg-cover 
-                    min-h-screen p-5
-                    flex flex-col justify-end"
-                    
-                  >
-      <form
-        action="#"
-        method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
-      >
-        <div className=" bg-zinc-200/10 backdrop-blur-sm p-5 rounded-lg grid gap-y-4">
+    <div
+      className=" bg-[url('/bg-sm2.jpg')] 
+                  bg-cover 
+                  min-h-screen 
+                  flex flex-col justify-evenly
+                  "
+    >
+      <div></div>
+      <div></div>
+      <form action="#" method="POST" className="mx-auto max-w-xl w-full p-5">
+        <div
+          className="bg-zinc-200/10 backdrop-blur-sm 
+                      
+        p-5 rounded-lg grid gap-y-4"
+        >
           <div>
             <input
               type="text"
@@ -36,7 +39,7 @@ const LoginPage = () => {
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
-          <div>
+          <div className="pt-4">
             <button
               type="submit"
               className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm 
